@@ -178,16 +178,11 @@ render();
  <form method="dialog" class="cloud-close"><button class="btn small" aria-label="Închide">✕</button></form>
  <p class="eyebrow">Sincronizare privată</p>
  <h2 id="cloudAuthTitle">Progres pe toate dispozitivele</h2>
- <p class="lead">Conectează-te cu adresa de email. Vei primi un cod temporar; nu ai nevoie de parolă.</p>
+ <p class="lead">Conectează-te cu adresa de email. Vei primi un link de conectare; nu ai nevoie de parolă. Deschide linkul pe dispozitivul pe care te conectezi.</p>
  <form id="sendCode" class="cloud-form">
   <label for="cloudEmail">Email</label>
   <input type="email" id="cloudEmail" required autocomplete="email" placeholder="email@exemplu.com" />
-  <button class="btn primary" type="submit">Trimite codul</button>
- </form>
- <form id="verifyCode" class="cloud-form hidden">
-  <label for="cloudCode">Codul primit prin email</label>
-  <input id="cloudCode" required type="text" inputmode="numeric" pattern="[0-9]{6,8}" maxlength="8" autocomplete="one-time-code" placeholder="123456" />
-  <button class="btn primary" type="submit">Conectează-te și sincronizează</button>
+  <button class="btn primary" type="submit">Trimite linkul de conectare</button>
  </form>
  <p class="cloud-message" id="cloudMessage" role="status" aria-live="polite"></p>
  </dialog>
